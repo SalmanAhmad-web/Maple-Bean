@@ -9,15 +9,19 @@
 </head>
 <body>
   <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
     <div class="container header-inner">
       <a href="index.html" class="brand"><span class="brand-mark">☕</span><span class="brand-name">Maple &amp; Bean</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="menu.html">Menu</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="contact.html" class="btn">Visit us</a>
+      <a href="contact.html" class="btn header-cta">Visit us</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
     </div>
   </header>
 

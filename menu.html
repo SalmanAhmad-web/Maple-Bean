@@ -9,15 +9,19 @@
 </head>
 <body>
   <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
     <div class="container header-inner">
       <a href="index.html" class="brand"><span class="brand-mark">☕</span><span class="brand-name">Maple &amp; Bean</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html" class="active">Menu</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="contact.html" class="btn">Visit us</a>
+      <a href="contact.html" class="btn header-cta">Visit us</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
     </div>
   </header>
 
@@ -31,10 +35,10 @@
     <section class="menu-section">
       <h2>Breakfast</h2>
       <ul class="menu-grid">
-        <li class="item-list"><div><p class="item-name">Butter croissant</p><p class="item-desc">All-butter, laminated for two days.</p></div><span class="item-price">$3.80</span></li>
-        <li class="item-list"><div><p class="item-name">Maple granola bowl</p><p class="item-desc">House granola, yogurt, seasonal fruit.</p></div><span class="item-price">$8.50</span></li>
-        <li class="item-list"><div><p class="item-name">Soft-scrambled eggs</p><p class="item-desc">On sourdough toast with chives.</p></div><span class="item-price">$10.00</span></li>
-        <li class="item-list"><div><p class="item-name">Cinnamon brioche</p><p class="item-desc">Warm, swirled, lightly glazed.</p></div><span class="item-price">$4.50</span></li>
+        <li><div><p class="item-name">Butter croissant</p><p class="item-desc">All-butter, laminated for two days.</p></div><span class="item-price">$3.80</span></li>
+        <li><div><p class="item-name">Maple granola bowl</p><p class="item-desc">House granola, yogurt, seasonal fruit.</p></div><span class="item-price">$8.50</span></li>
+        <li><div><p class="item-name">Soft-scrambled eggs</p><p class="item-desc">On sourdough toast with chives.</p></div><span class="item-price">$10.00</span></li>
+        <li><div><p class="item-name">Cinnamon brioche</p><p class="item-desc">Warm, swirled, lightly glazed.</p></div><span class="item-price">$4.50</span></li>
       </ul>
     </section>
 
@@ -81,8 +85,5 @@
     </div>
     <div class="copyright">© 2026 Maple &amp; Bean Café</div>
   </footer>
-  <style>
-    .menu-grid li { display:flex; justify-content:space-between; gap:1rem; padding:0.5rem 0; }
-  </style>
 </body>
 </html>
