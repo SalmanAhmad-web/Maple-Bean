@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Maple &amp; Bean</title>
+  <meta name="description" content="Visit, call or message Maple &amp; Bean café." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">☕</span><span class="brand-name">Maple &amp; Bean</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn">Visit us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <p class="eyebrow">Say hello</p>
+      <h1>Come visit us</h1>
+      <p>Drop by for a coffee, or send a message — we read every one.</p>
+    </section>
+
+    <section class="container contact-grid">
+      <div>
+        <div class="info-card">
+          <div class="card-icon">📍</div>
+          <div><p class="title">Address</p><p class="body">42 Linden Street
+Downtown</p></div>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🕒</div>
+          <div><p class="title">Hours</p><p class="body">Mon – Fri · 7am – 7pm
+Sat – Sun · 8am – 6pm</p></div>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">📞</div>
+          <div><p class="title">Phone</p><p class="body">(555) 123-4567</p></div>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">✉️</div>
+          <div><p class="title">Email</p><p class="body">hello@mapleandbean.cafe</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Thanks — we\'ll be in touch!';">
+        <h2>Send a message</h2>
+        <div class="field"><label for="name">Name</label><input id="name" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" required /></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" rows="5" required></textarea></div>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><span class="brand-mark">☕</span><span class="brand-name" style="color:var(--cream)">Maple &amp; Bean</span></div>
+        <p style="margin-top:0.75rem;max-width:20rem">A neighborhood café serving honest coffee and warm meals since 2014.</p>
+      </div>
+      <div><h3>Visit</h3><p>42 Linden Street</p><p>Open daily · 7am – 7pm</p></div>
+      <div><h3>Follow</h3><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Twitter</a></div></div>
+    </div>
+    <div class="copyright">© 2026 Maple &amp; Bean Café</div>
+  </footer>
+</body>
+</html>
